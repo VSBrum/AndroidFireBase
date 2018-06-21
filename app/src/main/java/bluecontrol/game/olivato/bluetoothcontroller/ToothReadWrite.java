@@ -13,13 +13,6 @@ import java.io.OutputStream;
 import java.util.Set;
 import java.util.UUID;
 
-/**
- * Created by olivato on 11/03/16.
- * Created for aBox Project 2016
- *
- * Especial thanks to: Bianca C.B. Campos, Marcelo Schmidt, Gabriel Teston, Danilo Queiroz Barbosa.
- *
- */
 public class ToothReadWrite {
 
     //------ ISSO DAQUI É UM MONTE DE DECLARAÇÃO DOIDA, NA REALIDADE NGM LIGA PRA ISSO --------//
@@ -30,16 +23,7 @@ public class ToothReadWrite {
     private static OutputStream outstream = null;
     private static InputStream instream = null;
 
-
-
-
     public ArrayAdapter<String> deviceslist;
-
-
-
-
-
-
 
     //--------- AQUI EU FIZ MAS NAO SEI SE FUNCIONA, MAS SE FUNCIONASSE ERA PRA VER OS AMIGUINHOS -------//
     public static Set<BluetoothDevice> Pareados()
@@ -73,7 +57,6 @@ public class ToothReadWrite {
             outstream = btSocket.getOutputStream();
             instream = btSocket.getInputStream();
 
-
         }
         //--------- AQUI É O FAMOSO CATCH QUE SE CRASHAR NÃO CRASHA -----------//
         catch (Exception e)
@@ -81,7 +64,6 @@ public class ToothReadWrite {
             Log.v("Erro:",e.toString());
             close( instream );
             close( btSocket );
-
 
         }
 
@@ -120,9 +102,6 @@ public class ToothReadWrite {
         }
 
     }
-
-
-
 
     /*------- ESSA DESGRAÇA ME DEU MUITO TRABALHO E SERVE PRA LER AS CAPOEIRA QUE CHEGA
               PRA VC USAR SEU ANIMAL É SÓ JOGAR EM UM TEXTVIEW+COUNTDOWNTIMER -------*/
