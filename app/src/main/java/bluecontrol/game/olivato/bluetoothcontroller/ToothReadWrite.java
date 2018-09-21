@@ -59,18 +59,15 @@ public class ToothReadWrite {
 
         }
         //--------- AQUI É O FAMOSO CATCH QUE SE CRASHAR NÃO CRASHA -----------//
-        catch (Exception e)
-        {
+        catch (Exception e) {
             Log.v("Erro:",e.toString());
             close( instream );
             close( btSocket );
-
         }
 
     }
     //--------- BLUETOOTH STATUS ----------//
-    public static boolean statusTooth()
-    {
+    public static boolean statusTooth(){
         return adaptador.isEnabled();
     }
 
@@ -132,7 +129,6 @@ public class ToothReadWrite {
             btSocket.close();
         } catch (IOException e)
         {
-
             e.printStackTrace();
         }
     }

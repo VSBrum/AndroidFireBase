@@ -43,60 +43,60 @@ public class MainActivity extends Activity {
         //final ImageView left = (ImageView) findViewById(R.id.left);
         //final ImageView right = (ImageView) findViewById(R.id.right);
 
-        /*para.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        para.setImageAlpha(20);
-                        ToothReadWrite.WriteBuffer((byte) 0);
-                        break;
-
-                    case MotionEvent.ACTION_UP:
-                        para.setImageAlpha(255);
-                        ToothReadWrite.WriteBuffer((byte) 0);
-                        break;
-                }
-                return false;
-            }
-        });
-
-        left.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        left.setImageAlpha(100);
-                        ToothReadWrite.WriteBuffer((byte) 4);
-                        break;
-
-                    case MotionEvent.ACTION_UP:
-                        left.setImageAlpha(255);
-                        Log.v("MANDA:", "0");
-                        ToothReadWrite.WriteBuffer((byte) 0);
-                        break;
-                }
-
-                return false;
-            }
-        });
-        right.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        right.setImageAlpha(100);
-                        ToothReadWrite.WriteBuffer((byte) 8);
-                        break;
-
-                    case MotionEvent.ACTION_UP:
-                        right.setImageAlpha(255);
-                        ToothReadWrite.WriteBuffer((byte) 0);
-                        break;
-                }
-                return false;
-            }
-        });*/
+        //para.setOnTouchListener(new View.OnTouchListener() {
+        //@Override
+        //public boolean onTouch(View v, MotionEvent event) {
+        //switch (event.getAction()) {
+        //case MotionEvent.ACTION_DOWN:
+        //para.setImageAlpha(20);
+        //ToothReadWrite.WriteBuffer((byte) 0);
+        //break;
+        //
+        //case MotionEvent.ACTION_UP:
+        //para.setImageAlpha(255);
+        //ToothReadWrite.WriteBuffer((byte) 0);
+        //break;
+        //}
+        //return false;
+        //}
+        //});
+        //
+        //left.setOnTouchListener(new View.OnTouchListener() {
+        //@Override
+        //public boolean onTouch(View v, MotionEvent event) {
+        //switch (event.getAction()) {
+        //case MotionEvent.ACTION_DOWN:
+        //left.setImageAlpha(100);
+        //ToothReadWrite.WriteBuffer((byte) 4);
+        //break;
+        //
+        //case MotionEvent.ACTION_UP:
+        //left.setImageAlpha(255);
+        //Log.v("MANDA:", "0");
+        //ToothReadWrite.WriteBuffer((byte) 0);
+        //break;
+        //}
+        //
+        //return false;
+        //}
+        //});
+        //right.setOnTouchListener(new View.OnTouchListener() {
+        //@Override
+        //public boolean onTouch(View v, MotionEvent event) {
+        //switch (event.getAction()) {
+        //case MotionEvent.ACTION_DOWN:
+        //right.setImageAlpha(100);
+        //ToothReadWrite.WriteBuffer((byte) 8);
+        //break;
+        //
+        //case MotionEvent.ACTION_UP:
+        //right.setImageAlpha(255);
+        //ToothReadWrite.WriteBuffer((byte) 0);
+        //break;
+        //}
+        //return false;
+        //}
+        //});
         up.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
